@@ -1,0 +1,223 @@
+<html>
+<head>
+<title>Training</title>
+<style>
+			.container{
+width:50%;
+height:800px;
+background:#fff;
+margin:0 auto;
+border: 2px solid #fff;
+}
+.container .left{
+float:left;
+width:50%;
+height:500px;
+background:url(firee.jpg);
+background-size:cover;
+box-sizing:border-box;
+}
+.container .right{
+float:right;
+width:250px;
+height:800px;
+box-sizing:border-box;
+}
+* {box-sizing:border-box}
+input[type=text]{
+font-style:italic;
+border-left:5px solid red;
+border-right:none;
+border-top:none;
+}
+input[type=email]{
+font-style:italic;
+border-left:5px solid red;
+border-right:none;
+border-top:none;
+}
+.p{border-left:5px solid red;
+border-right:none;
+border-top:none;
+
+}
+select{
+font-style:italic;
+border-left:5px solid red;
+border-right:none;
+border-top:none;
+}
+.a{font-size:25px;}
+.b
+{list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#990000;
+padding:3em;
+}
+li{float:left;}
+li a{
+display:block;
+color:white;
+text-align:center;
+padding:14px 16px;
+text-decoration:none;
+font-size:19px;
+font-weight:bold;
+}
+li a.hover{background-color:#111;}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #990000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#8585ad;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.table{
+    text-align:center;
+  }
+  #myydiv{background-color:black;}
+  td a{text-decoration:none;}
+  th a{text-decoration:none;}
+  th{color:white;}
+  a:visited{color:white;}
+  .d{float:right;}
+</style>
+</head>
+<body>
+<div id='navbar'>
+<ul class='b'>
+<li class='a'><a href='home.html'>About Us</a></li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a href='find.html'>Find Your Station</a>
+      <a href='station.html'>List Of Stations</a>
+	  </div>
+  </li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Safety</a>
+    <div class="dropdown-content">
+      <a href='firesafety.html'>Fire Safety</a>
+      <a href='evacuation.html'>Evacuation Info</a>
+	  </div>
+  </li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Preventive Measures</a>
+    <div class="dropdown-content">
+      <a href='train.html'>Train Your Management</a>
+      <a href='guidelines.html'>Safety Guidelines</a>
+    </div>
+  </li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Hazards</a>
+    <div class="dropdown-content">
+      <a href='hazard.html'>Causes Of Fire</a>
+      <a href='levels.html'>Levels Of Fire</a>
+    </div>
+  </li>
+
+<li class='a'><a href='book.html'>Book A Session</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Support Us</a>
+    <div class="dropdown-content">
+      <a href='volunteer.html'>Volunteer</a>
+      <a href='payment.html'>Donate</a>
+    </div>
+  </li>
+  <li class='a'><a href='contact_us.html'>Contact Us</a></li>
+  <li class='d'><a href='home.html'><img src='mfd3.jpg'></a></li>
+</ul>
+</div>
+ <div class='container'>
+<div class='left'></div>
+<div class='right'>
+<div class='formbox'>
+<form>
+<p>List of stations: </p>
+    	<input type="radio" name="station" value="andheri" checked="checked" />Andheri
+      <br/>
+		  <input type="radio" name="station" value="bandra" /> Bandra
+      <br/>
+      <input type="radio" name="station" value="dadar" /> Dadar  <br /> <br />
+      <input type="text" name="uname" size="15" maxlength="30" value='First Name'/> <br /> <br />
+      <input type="password" name="pass" size="15" maxlength="30" value='Last Name' /> <br /> <br />
+      <input type="email" name="uemail" size="15" maxlength="30" value='Email'/> <br /> <br />
+
+      <p>Gender? </p>
+      <input type="radio" name="gender" value="female" checked="checked" /> Female
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="others" /> Others
+        <br />
+    <br/>
+        <p>Preffered day and time:
+        </p>
+        <input type="radio" name="session" value="sat" checked="checked" /> Saturday, 3-6pm
+        <br/>
+        <input type="radio" name="session" value="sun" /> Sunday, 6-9pm
+		<br>
+		<br>
+		<input type='submit' value='Submit'>
+	</form>
+	</div>
+	</div>
+	</div>
+	<div id='myydiv'>
+<table cellspacing="20px" cellpadding="15px">
+  <tr rowspan="2">
+    <th><a href='home.html'>About Us</a></th>
+    <th>Services</th>
+    <th>Safety</th>
+    <th>Hazard</th>
+    <th>Preventive Measure</th>
+    <th><a href='book.html'>Book A Session</a></th>
+    <th>Support Us</th>
+    <th><a href='contact_us.html'>Contact Us</a></th>
+   </tr>
+
+<tr>
+    <td></td>
+      <td><a href='find.html'>-Find Your Station</a></td>
+      <td><a href='firesafety.html'>-Fire Safety</a></td>
+      <td><a href='hazard.html'>-Causes of Fire</a></td>
+      <td><a href='guidelines.html'>-Fire Safety Guidrelines</a></td>
+      <td></td>
+      <td><a href='volunteer.html'>-Volunteers</a></td>
+      <td></td>
+</tr>
+
+<tr>
+  <td></td>
+    <td><a href='station.html'>-List of Stations</a></td>
+      <td><a href='evacuation.html'>-Evacuation Information</a></td>
+      <td><a href='levels.html'>-Level of Fire</a></td>
+      <td><a href='train.html'>-Train Your Management</a></td>
+      <td></td>
+      <td><a href='payment.html'>-Donate</a></td>
+      <td></td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

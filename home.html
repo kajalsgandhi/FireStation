@@ -1,0 +1,315 @@
+<!Doctype html>
+<html>
+<head>
+<title>Fire Department</title>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.b
+{list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#990000;
+padding:3em;
+}
+li{float:left;}
+li a{
+display:block;
+color:white;
+text-align:center;
+padding:14px 16px;
+text-decoration:none;
+font-size:19px;
+font-weight:bold;
+}
+li a.hover{background-color:#111;}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #990000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#8585ad;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#navbar{background-color:#8585ad;}
+/* Create two unequal columns that floats next to each other */
+.row{margin-left:15px;}
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{background-color:black;}
+.d{float:right;}
+</style>
+
+</head>
+<body>
+<div id='navbar'>
+<ul class='b'>
+<li class='a'><a href='home.html'>About Us</a></li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a href='find.html'>Find Your Station</a>
+      <a href='station.html'>List Of Stations</a>
+	  </div>
+  </li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Safety</a>
+    <div class="dropdown-content">
+      <a href='firesafety.html'>Fire Safety</a>
+      <a href='evacuation.html'>Evacuation Info</a>
+	  </div>
+  </li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Preventive Measures</a>
+    <div class="dropdown-content">
+      <a href='train.html'>Train Your Management</a>
+      <a href='guidelines.html'>Safety Guidelines</a>
+    </div>
+  </li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Hazards</a>
+    <div class="dropdown-content">
+      <a href='hazard.html'>Causes Of Fire</a>
+      <a href='levels.html'>Levels Of Fire</a>
+    </div>
+  </li>
+
+<li class='a'><a href='book.html'>Book A Session</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Support Us</a>
+    <div class="dropdown-content">
+      <a href='volunteer.html'>Volunteer</a>
+      <a href='payment.html'>Donate</a>
+    </div>
+  </li>
+  <li class='a'><a href='contact_us.html'>Contact Us</a></li>
+  <li class='d'><a href='home.html'><img src='mfd3.jpg'></a></li>
+</ul>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="fire21.jpg" style="width:100%">
+  <div class="text">Mumbai Fire Department</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="fire31.jpg" style="width:100%">
+  <div class="text">Braving the fire</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="fire41.jpg" style="width:100%">
+  <div class="text">First Responders</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="row">
+  <div class="column left">
+  <h2><font color='white'>EMERGENCY NUMBER IS 101</font></h2>
+  <h2><font color='white'>FAKE CALLS ARE PUNISHIBLE BY A FINE OF Rs.2000</font></h2>
+    <h2><font color='white'>Role Of Fire Services</font></h2>
+    <p><font color='white'>The Service was expected to focus on fighting fires, and the law constrained what they could do. Since then the role of the Fire Service has changed a great deal. As a result, under the new Act, Fire and rescue Authorities now have a range of statutory duties to:-</font></p>
+	<ul>
+	<li><font color='white'>Promote Fire Safety;</font></li>
+	<li><font color='white'>To prepare for:</font>
+	<ol>
+	<li><font color='white'>fighting fires and protecting people and property from fires;</font></li>
+	<li><font color='white'>Rescuing people from Road Traffic Accidents;</li>
+	<li><font color='white'>Dealing with other specific emergencies, such as flooding or terrorist attack which are set out by Statutory Order and can be amended in line with how the role of the Service may change in the future. In addition, all Fire and Rescue authorities will be able to do other things to respond to the particular needs of their communities and the risks they face.</font> </li>
+	</ol>
+	</li>
+	<li><font color='white'>ensuring that fire and rescue authorities can do things that are not specifically set out in the act but which will help them meet their statutory duties;</font></li>
+	</ul>
+	<h2><font color='white'>Statistics:</h2>
+	<p><font color='white'>Almost 48,434 fire incident have taken place in Mumbai in the last 10 years.</font></p>
+	<p><font color='white'> there were 48,434 fire calls received from 2008 to July 2018. Out of these, 1,568 broke out in high rise apartments, 8,737 in residential buildings, 3,151 in slums, and 3,833 in commercial buildings. </font></p>
+	<br>
+	<img src='acc.jpg'></img>
+  </div>
+  <div class="column right">
+    <h2><font color='white'>#mumbaifirebrigade</font></h2>
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A big thank you to the <a href="https://twitter.com/hashtag/MumbaiFireBrigade?src=hash&amp;ref_src=twsrc%5Etfw">#MumbaiFireBrigade</a>, <a href="https://twitter.com/MumbaiPolice?ref_src=twsrc%5Etfw">@MumbaiPolice</a> and the medical services for their effective response in controlling this massive fire tonight. And a shout out to our Muslim brothers for their timely prayers. Never heard the Azan at 3am before. <a href="https://twitter.com/hashtag/BycullaFire?src=hash&amp;ref_src=twsrc%5Etfw">#BycullaFire</a> <a href="https://t.co/vmDAjxCRWa">pic.twitter.com/vmDAjxCRWa</a></p>&mdash; Diana Penty (@DianaPenty) <a href="https://twitter.com/DianaPenty/status/1166505698429038594?ref_src=twsrc%5Etfw">August 28, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br>
+
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D2204938276221615%26id%3D396710873711040&width=500" width="500" height="462" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  </div>
+</div>
+<br>
+
+</body>
+</html>
